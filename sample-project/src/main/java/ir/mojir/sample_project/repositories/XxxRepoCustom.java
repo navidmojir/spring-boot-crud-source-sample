@@ -17,7 +17,6 @@ import jakarta.persistence.criteria.CriteriaBuilder;
 import jakarta.persistence.criteria.CriteriaQuery;
 import jakarta.persistence.criteria.Predicate;
 import jakarta.persistence.criteria.Root;
-import jakarta.validation.Valid;
 
 @Component
 public class XxxRepoCustom {
@@ -26,7 +25,7 @@ public class XxxRepoCustom {
 	private XxxRepo xxxRepo;
 	
 	@SuppressWarnings("serial")
-	public Page<Xxx> search(@Valid SearchDto<XxxSearchFilter> req) {
+	public Page<Xxx> search(SearchDto<XxxSearchFilter> req) {
 		Pageable pageable = RepositoryHelper.generatePageRequestWithSort(req.getPaging(), req.getSorting());
 		return xxxRepo.findAll(new Specification<Xxx>() {
 
@@ -38,12 +37,10 @@ public class XxxRepoCustom {
 				);
 			}
 
-			
-			
 		}, pageable);
 	}
 	
-	private List<Predicate> makePredicates(@Valid SearchDto<XxxSearchFilter> req,
+	private List<Predicate> makePredicates(SearchDto<XxxSearchFilter> req,
 			CriteriaBuilder cb, Root<Xxx> root) {
 		List<Predicate> predicates = new ArrayList<Predicate>();
 

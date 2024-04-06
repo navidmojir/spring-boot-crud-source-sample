@@ -32,7 +32,7 @@ import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("/xxxs")
-@CrossOrigin(allowedHeaders = "*")
+@CrossOrigin(exposedHeaders = "X-Total-Count")
 public class XxxController {
 	
 	@Autowired
