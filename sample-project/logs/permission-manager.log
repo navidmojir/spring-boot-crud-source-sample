@@ -1,0 +1,883 @@
+2024-04-06 10:04:35,831 INFO  permission-manager [background-preinit] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 8.0.1.Final
+2024-04-06 10:04:35,867 INFO  permission-manager [restartedMain] org.springframework.boot.StartupInfoLogger: Starting SampleProjectApplication using Java 17.0.10 with PID 2172 (D:\Programming\spring-boot-crud-source-sample\sample-project\target\classes started by Cyber in D:\Programming\spring-boot-crud-source-sample\sample-project)
+2024-04-06 10:04:35,868 INFO  permission-manager [restartedMain] org.springframework.boot.SpringApplication: No active profile set, falling back to 1 default profile: "default"
+2024-04-06 10:04:35,904 INFO  permission-manager [restartedMain] org.springframework.boot.logging.DeferredLog: Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-06 10:04:35,907 INFO  permission-manager [restartedMain] org.springframework.boot.logging.DeferredLog: For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-06 10:04:36,413 INFO  permission-manager [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-06 10:04:36,453 INFO  permission-manager [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 36 ms. Found 1 JPA repository interface.
+2024-04-06 10:04:37,666 INFO  permission-manager [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat initialized with port 8080 (http)
+2024-04-06 10:04:37,677 INFO  permission-manager [restartedMain] org.apache.juli.logging.DirectJDKLog: Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-06 10:04:37,677 INFO  permission-manager [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting service [Tomcat]
+2024-04-06 10:04:37,679 INFO  permission-manager [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-04-06 10:04:37,714 INFO  permission-manager [restartedMain] org.apache.juli.logging.DirectJDKLog: Initializing Spring embedded WebApplicationContext
+2024-04-06 10:04:37,717 INFO  permission-manager [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1808 ms
+2024-04-06 10:04:37,745 INFO  permission-manager [restartedMain] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Starting...
+2024-04-06 10:04:37,921 INFO  permission-manager [restartedMain] com.zaxxer.hikari.pool.HikariPool: HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./db user=SA
+2024-04-06 10:04:37,922 INFO  permission-manager [restartedMain] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Start completed.
+2024-04-06 10:04:37,933 INFO  permission-manager [restartedMain] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration: H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./db'
+2024-04-06 10:04:38,083 INFO  permission-manager [restartedMain] org.hibernate.jpa.internal.util.LogHelper: HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-06 10:04:38,161 INFO  permission-manager [restartedMain] org.hibernate.Version: HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-04-06 10:04:38,200 INFO  permission-manager [restartedMain] org.hibernate.cache.internal.RegionFactoryInitiator: HHH000026: Second-level cache disabled
+2024-04-06 10:04:38,386 INFO  permission-manager [restartedMain] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo: No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-06 10:04:38,874 INFO  permission-manager [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-06 10:04:38,903 INFO  permission-manager [restartedMain] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-06 10:04:39,115 WARN  permission-manager [restartedMain] org.springframework.context.support.AbstractApplicationContext: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'xxxController': Unsatisfied dependency expressed through field 'mapper': No qualifying bean of type 'org.modelmapper.ModelMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2024-04-06 10:04:39,116 INFO  permission-manager [restartedMain] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-06 10:04:39,120 INFO  permission-manager [restartedMain] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Shutdown initiated...
+2024-04-06 10:04:39,133 INFO  permission-manager [restartedMain] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Shutdown completed.
+2024-04-06 10:04:39,135 INFO  permission-manager [restartedMain] org.apache.juli.logging.DirectJDKLog: Stopping service [Tomcat]
+2024-04-06 10:04:39,144 INFO  permission-manager [restartedMain] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger: 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-04-06 10:04:39,160 ERROR permission-manager [restartedMain] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter: 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field mapper in ir.mojir.sample_project.rest_controllers.XxxController required a bean of type 'org.modelmapper.ModelMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.modelmapper.ModelMapper' in your configuration.
+
+2024-04-06 10:06:17,419 INFO  permission-manager [background-preinit] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 8.0.1.Final
+2024-04-06 10:06:17,458 INFO  permission-manager [restartedMain] org.springframework.boot.StartupInfoLogger: Starting SampleProjectApplication using Java 17.0.10 with PID 21936 (D:\Programming\spring-boot-crud-source-sample\sample-project\target\classes started by Cyber in D:\Programming\spring-boot-crud-source-sample\sample-project)
+2024-04-06 10:06:17,459 INFO  permission-manager [restartedMain] org.springframework.boot.SpringApplication: No active profile set, falling back to 1 default profile: "default"
+2024-04-06 10:06:17,496 INFO  permission-manager [restartedMain] org.springframework.boot.logging.DeferredLog: Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-06 10:06:17,496 INFO  permission-manager [restartedMain] org.springframework.boot.logging.DeferredLog: For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-06 10:06:17,882 WARN  permission-manager [restartedMain] org.springframework.context.support.AbstractApplicationContext: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: @Bean method 'modelMapper' must not be private or final; change the method's modifiers to continue.
+Offending resource: ir.mojir.sample_project.SampleProjectApplication
+2024-04-06 10:06:17,889 INFO  permission-manager [restartedMain] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger: 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-04-06 10:06:17,904 ERROR permission-manager [restartedMain] org.springframework.boot.SpringApplication: Application run failed
+org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: @Bean method 'modelMapper' must not be private or final; change the method's modifiers to continue.
+Offending resource: ir.mojir.sample_project.SampleProjectApplication
+	at org.springframework.beans.factory.parsing.FailFastProblemReporter.error(FailFastProblemReporter.java:72)
+	at org.springframework.context.annotation.BeanMethod.validate(BeanMethod.java:58)
+	at org.springframework.context.annotation.ConfigurationClass.validate(ConfigurationClass.java:222)
+	at org.springframework.context.annotation.ConfigurationClassParser.validate(ConfigurationClassParser.java:206)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:417)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:289)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:788)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:606)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at ir.mojir.sample_project.SampleProjectApplication.main(SampleProjectApplication.java:13)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+2024-04-06 10:06:31,174 INFO  permission-manager [background-preinit] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 8.0.1.Final
+2024-04-06 10:06:31,206 INFO  permission-manager [restartedMain] org.springframework.boot.StartupInfoLogger: Starting SampleProjectApplication using Java 17.0.10 with PID 21276 (D:\Programming\spring-boot-crud-source-sample\sample-project\target\classes started by Cyber in D:\Programming\spring-boot-crud-source-sample\sample-project)
+2024-04-06 10:06:31,207 INFO  permission-manager [restartedMain] org.springframework.boot.SpringApplication: No active profile set, falling back to 1 default profile: "default"
+2024-04-06 10:06:31,242 INFO  permission-manager [restartedMain] org.springframework.boot.logging.DeferredLog: Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-06 10:06:31,243 INFO  permission-manager [restartedMain] org.springframework.boot.logging.DeferredLog: For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-06 10:06:31,755 INFO  permission-manager [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-06 10:06:31,801 INFO  permission-manager [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 38 ms. Found 1 JPA repository interface.
+2024-04-06 10:06:32,333 INFO  permission-manager [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat initialized with port 8080 (http)
+2024-04-06 10:06:32,340 INFO  permission-manager [restartedMain] org.apache.juli.logging.DirectJDKLog: Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-06 10:06:32,342 INFO  permission-manager [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting service [Tomcat]
+2024-04-06 10:06:32,343 INFO  permission-manager [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-04-06 10:06:32,383 INFO  permission-manager [restartedMain] org.apache.juli.logging.DirectJDKLog: Initializing Spring embedded WebApplicationContext
+2024-04-06 10:06:32,385 INFO  permission-manager [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1141 ms
+2024-04-06 10:06:32,416 INFO  permission-manager [restartedMain] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Starting...
+2024-04-06 10:06:32,652 INFO  permission-manager [restartedMain] com.zaxxer.hikari.pool.HikariPool: HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./db user=SA
+2024-04-06 10:06:32,655 INFO  permission-manager [restartedMain] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Start completed.
+2024-04-06 10:06:32,665 INFO  permission-manager [restartedMain] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration: H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./db'
+2024-04-06 10:06:32,826 INFO  permission-manager [restartedMain] org.hibernate.jpa.internal.util.LogHelper: HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-06 10:06:32,895 INFO  permission-manager [restartedMain] org.hibernate.Version: HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-04-06 10:06:32,929 INFO  permission-manager [restartedMain] org.hibernate.cache.internal.RegionFactoryInitiator: HHH000026: Second-level cache disabled
+2024-04-06 10:06:33,135 INFO  permission-manager [restartedMain] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo: No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-06 10:06:33,598 INFO  permission-manager [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-06 10:06:33,626 INFO  permission-manager [restartedMain] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-06 10:06:33,924 WARN  permission-manager [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-06 10:06:34,267 INFO  permission-manager [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer: LiveReload server is running on port 35729
+2024-04-06 10:06:34,283 INFO  permission-manager [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting ProtocolHandler ["http-nio-8080"]
+2024-04-06 10:06:34,303 INFO  permission-manager [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat started on port 8080 (http) with context path ''
+2024-04-06 10:06:34,313 INFO  permission-manager [restartedMain] org.springframework.boot.StartupInfoLogger: Started SampleProjectApplication in 3.431 seconds (process running for 3.709)
+2024-04-06 10:06:38,761 INFO  permission-manager [http-nio-8080-exec-1] org.apache.juli.logging.DirectJDKLog: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-06 10:06:38,761 INFO  permission-manager [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet: Initializing Servlet 'dispatcherServlet'
+2024-04-06 10:06:38,763 INFO  permission-manager [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet: Completed initialization in 1 ms
+2024-04-06 10:06:38,826 ERROR permission-manager [http-nio-8080-exec-1] ir.mojir.sample_project.exception_mappers.DefaultExceptionMapper: An exception occured in processing request. Trace: 
+ir.mojir.spring_boot_commons.exceptions.EntityNotFoundException: The entity with id 1 was not found
+	at ir.mojir.sample_project.services.XxxService.findById(XxxService.java:44)
+	at ir.mojir.sample_project.services.XxxService.get(XxxService.java:36)
+	at ir.mojir.sample_project.rest_controllers.XxxController.get(XxxController.java:54)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:261)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:189)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:917)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:829)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-04-06 10:06:38,872 WARN  permission-manager [http-nio-8080-exec-1] org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver: Resolved [ir.mojir.spring_boot_commons.exceptions.EntityNotFoundException: The entity with id 1 was not found]
+2024-04-06 10:06:38,906 ERROR permission-manager [http-nio-8080-exec-2] ir.mojir.sample_project.exception_mappers.DefaultExceptionMapper: A general exception occured in processing request. Trace: 
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-04-06 10:06:38,909 WARN  permission-manager [http-nio-8080-exec-2] org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver: Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2024-04-06 10:06:57,014 INFO  permission-manager [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener: Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-04-06 10:06:57,017 INFO  permission-manager [Thread-6] org.apache.juli.logging.DirectJDKLog: Stopping ProtocolHandler ["http-nio-8080"]
+2024-04-06 10:06:57,034 INFO  permission-manager [Thread-6] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-06 10:06:57,037 INFO  permission-manager [Thread-6] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Shutdown initiated...
+2024-04-06 10:06:57,060 INFO  permission-manager [Thread-6] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Shutdown completed.
+2024-04-06 10:06:57,122 INFO  permission-manager [restartedMain] org.springframework.boot.StartupInfoLogger: Starting SampleProjectApplication using Java 17.0.10 with PID 21276 (D:\Programming\spring-boot-crud-source-sample\sample-project\target\classes started by Cyber in D:\Programming\spring-boot-crud-source-sample\sample-project)
+2024-04-06 10:06:57,125 INFO  permission-manager [restartedMain] org.springframework.boot.SpringApplication: No active profile set, falling back to 1 default profile: "default"
+2024-04-06 10:06:57,243 INFO  permission-manager [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-06 10:06:57,248 INFO  permission-manager [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interface.
+2024-04-06 10:06:57,306 INFO  permission-manager [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat initialized with port 8080 (http)
+2024-04-06 10:06:57,307 INFO  permission-manager [restartedMain] org.apache.juli.logging.DirectJDKLog: Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-06 10:06:57,307 INFO  permission-manager [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting service [Tomcat]
+2024-04-06 10:06:57,308 INFO  permission-manager [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-04-06 10:06:57,319 INFO  permission-manager [restartedMain] org.apache.juli.logging.DirectJDKLog: Initializing Spring embedded WebApplicationContext
+2024-04-06 10:06:57,319 INFO  permission-manager [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 192 ms
+2024-04-06 10:06:57,328 INFO  permission-manager [restartedMain] com.zaxxer.hikari.HikariDataSource: HikariPool-2 - Starting...
+2024-04-06 10:06:57,335 INFO  permission-manager [restartedMain] com.zaxxer.hikari.pool.HikariPool: HikariPool-2 - Added connection conn10: url=jdbc:h2:file:./db user=SA
+2024-04-06 10:06:57,335 INFO  permission-manager [restartedMain] com.zaxxer.hikari.HikariDataSource: HikariPool-2 - Start completed.
+2024-04-06 10:06:57,336 INFO  permission-manager [restartedMain] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration: H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./db'
+2024-04-06 10:06:57,357 INFO  permission-manager [restartedMain] org.hibernate.jpa.internal.util.LogHelper: HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-06 10:06:57,359 INFO  permission-manager [restartedMain] org.hibernate.cache.internal.RegionFactoryInitiator: HHH000026: Second-level cache disabled
+2024-04-06 10:06:57,363 INFO  permission-manager [restartedMain] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo: No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-06 10:06:57,386 INFO  permission-manager [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-06 10:06:57,388 INFO  permission-manager [restartedMain] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-06 10:06:57,443 WARN  permission-manager [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-06 10:06:57,518 INFO  permission-manager [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer: LiveReload server is running on port 35729
+2024-04-06 10:06:57,524 INFO  permission-manager [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting ProtocolHandler ["http-nio-8080"]
+2024-04-06 10:06:57,530 INFO  permission-manager [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat started on port 8080 (http) with context path ''
+2024-04-06 10:06:57,535 INFO  permission-manager [restartedMain] org.springframework.boot.StartupInfoLogger: Started SampleProjectApplication in 0.432 seconds (process running for 26.93)
+2024-04-06 10:06:57,540 INFO  permission-manager [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener: Condition evaluation unchanged
+2024-04-06 10:06:58,954 INFO  permission-manager [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener: Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-04-06 10:06:58,957 INFO  permission-manager [Thread-8] org.apache.juli.logging.DirectJDKLog: Stopping ProtocolHandler ["http-nio-8080"]
+2024-04-06 10:06:58,970 INFO  permission-manager [Thread-8] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-06 10:06:58,971 INFO  permission-manager [Thread-8] com.zaxxer.hikari.HikariDataSource: HikariPool-2 - Shutdown initiated...
+2024-04-06 10:06:58,988 INFO  permission-manager [Thread-8] com.zaxxer.hikari.HikariDataSource: HikariPool-2 - Shutdown completed.
+2024-04-06 10:06:59,062 INFO  permission-manager [restartedMain] org.springframework.boot.StartupInfoLogger: Starting SampleProjectApplication using Java 17.0.10 with PID 21276 (D:\Programming\spring-boot-crud-source-sample\sample-project\target\classes started by Cyber in D:\Programming\spring-boot-crud-source-sample\sample-project)
+2024-04-06 10:06:59,063 INFO  permission-manager [restartedMain] org.springframework.boot.SpringApplication: No active profile set, falling back to 1 default profile: "default"
+2024-04-06 10:06:59,183 INFO  permission-manager [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-06 10:06:59,190 INFO  permission-manager [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interface.
+2024-04-06 10:06:59,258 INFO  permission-manager [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat initialized with port 8080 (http)
+2024-04-06 10:06:59,259 INFO  permission-manager [restartedMain] org.apache.juli.logging.DirectJDKLog: Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-06 10:06:59,260 INFO  permission-manager [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting service [Tomcat]
+2024-04-06 10:06:59,260 INFO  permission-manager [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-04-06 10:06:59,280 INFO  permission-manager [restartedMain] org.apache.juli.logging.DirectJDKLog: Initializing Spring embedded WebApplicationContext
+2024-04-06 10:06:59,281 INFO  permission-manager [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 208 ms
+2024-04-06 10:06:59,291 INFO  permission-manager [restartedMain] com.zaxxer.hikari.HikariDataSource: HikariPool-3 - Starting...
+2024-04-06 10:06:59,298 INFO  permission-manager [restartedMain] com.zaxxer.hikari.pool.HikariPool: HikariPool-3 - Added connection conn20: url=jdbc:h2:file:./db user=SA
+2024-04-06 10:06:59,299 INFO  permission-manager [restartedMain] com.zaxxer.hikari.HikariDataSource: HikariPool-3 - Start completed.
+2024-04-06 10:06:59,299 INFO  permission-manager [restartedMain] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration: H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./db'
+2024-04-06 10:06:59,313 INFO  permission-manager [restartedMain] org.hibernate.jpa.internal.util.LogHelper: HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-06 10:06:59,315 INFO  permission-manager [restartedMain] org.hibernate.cache.internal.RegionFactoryInitiator: HHH000026: Second-level cache disabled
+2024-04-06 10:06:59,317 INFO  permission-manager [restartedMain] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo: No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-06 10:06:59,350 INFO  permission-manager [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-06 10:06:59,352 INFO  permission-manager [restartedMain] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-06 10:06:59,403 WARN  permission-manager [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-06 10:06:59,469 INFO  permission-manager [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer: LiveReload server is running on port 35729
+2024-04-06 10:06:59,472 INFO  permission-manager [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting ProtocolHandler ["http-nio-8080"]
+2024-04-06 10:06:59,476 INFO  permission-manager [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat started on port 8080 (http) with context path ''
+2024-04-06 10:06:59,479 INFO  permission-manager [restartedMain] org.springframework.boot.StartupInfoLogger: Started SampleProjectApplication in 0.451 seconds (process running for 28.874)
+2024-04-06 10:06:59,480 INFO  permission-manager [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener: Condition evaluation unchanged
+2024-04-06 10:07:01,188 INFO  permission-manager [http-nio-8080-exec-1] org.apache.juli.logging.DirectJDKLog: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-06 10:07:01,189 INFO  permission-manager [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet: Initializing Servlet 'dispatcherServlet'
+2024-04-06 10:07:01,189 INFO  permission-manager [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet: Completed initialization in 0 ms
+2024-04-06 10:07:01,229 INFO  permission-manager [http-nio-8080-exec-2] ir.mojir.sample_project.services.XxxService: Searching xxx
+2024-04-06 10:09:02,064 INFO  permission-manager [http-nio-8080-exec-4] org.apache.juli.logging.DirectJDKLog: Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x000xf30x010x000x000xef0x030x039v\0x08Z0xb80xda0xbd0xbe0xbe0xe10xcaO0x8eo0xa10xed0x1f0xde'0x0e70xb60x930x8d0xb9IN0xe50x100x990xe4 ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:407)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:264)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-04-06 10:09:09,975 INFO  permission-manager [http-nio-8080-exec-5] ir.mojir.sample_project.services.XxxService: A new xxx with id 0 was created successfully.
+2024-04-06 10:09:09,982 ERROR permission-manager [http-nio-8080-exec-5] ir.mojir.sample_project.exception_mappers.DefaultExceptionMapper: A general exception occured in processing request. Trace: 
+org.springframework.web.HttpMediaTypeNotAcceptableException: No acceptable representation
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:322)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.handleReturnValue(RequestResponseBodyMethodProcessor.java:190)
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:78)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:917)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:829)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-04-06 10:09:09,989 WARN  permission-manager [http-nio-8080-exec-5] org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver: Resolved [org.springframework.web.HttpMediaTypeNotAcceptableException: No acceptable representation]
+2024-04-06 10:10:28,486 INFO  permission-manager [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener: Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-04-06 10:10:28,489 INFO  permission-manager [Thread-12] org.apache.juli.logging.DirectJDKLog: Stopping ProtocolHandler ["http-nio-8080"]
+2024-04-06 10:10:28,501 INFO  permission-manager [Thread-12] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-06 10:10:28,502 INFO  permission-manager [Thread-12] com.zaxxer.hikari.HikariDataSource: HikariPool-3 - Shutdown initiated...
+2024-04-06 10:10:28,551 INFO  permission-manager [Thread-12] com.zaxxer.hikari.HikariDataSource: HikariPool-3 - Shutdown completed.
+2024-04-06 10:10:28,606 INFO  permission-manager [restartedMain] org.springframework.boot.StartupInfoLogger: Starting SampleProjectApplication using Java 17.0.10 with PID 21276 (D:\Programming\spring-boot-crud-source-sample\sample-project\target\classes started by Cyber in D:\Programming\spring-boot-crud-source-sample\sample-project)
+2024-04-06 10:10:28,612 INFO  permission-manager [restartedMain] org.springframework.boot.SpringApplication: No active profile set, falling back to 1 default profile: "default"
+2024-04-06 10:10:28,718 INFO  permission-manager [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-06 10:10:28,733 INFO  permission-manager [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 14 ms. Found 1 JPA repository interface.
+2024-04-06 10:10:28,787 INFO  permission-manager [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat initialized with port 8080 (http)
+2024-04-06 10:10:28,788 INFO  permission-manager [restartedMain] org.apache.juli.logging.DirectJDKLog: Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-06 10:10:28,789 INFO  permission-manager [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting service [Tomcat]
+2024-04-06 10:10:28,789 INFO  permission-manager [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-04-06 10:10:28,800 INFO  permission-manager [restartedMain] org.apache.juli.logging.DirectJDKLog: Initializing Spring embedded WebApplicationContext
+2024-04-06 10:10:28,800 INFO  permission-manager [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 181 ms
+2024-04-06 10:10:28,807 INFO  permission-manager [restartedMain] com.zaxxer.hikari.HikariDataSource: HikariPool-4 - Starting...
+2024-04-06 10:10:28,820 INFO  permission-manager [restartedMain] com.zaxxer.hikari.pool.HikariPool: HikariPool-4 - Added connection conn30: url=jdbc:h2:file:./db user=SA
+2024-04-06 10:10:28,821 INFO  permission-manager [restartedMain] com.zaxxer.hikari.HikariDataSource: HikariPool-4 - Start completed.
+2024-04-06 10:10:28,822 INFO  permission-manager [restartedMain] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration: H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./db'
+2024-04-06 10:10:28,836 INFO  permission-manager [restartedMain] org.hibernate.jpa.internal.util.LogHelper: HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-06 10:10:28,838 INFO  permission-manager [restartedMain] org.hibernate.cache.internal.RegionFactoryInitiator: HHH000026: Second-level cache disabled
+2024-04-06 10:10:28,841 INFO  permission-manager [restartedMain] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo: No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-06 10:10:28,888 INFO  permission-manager [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-06 10:10:28,890 ERROR permission-manager [restartedMain] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Export identifier [xxx] encountered more than once
+2024-04-06 10:10:28,891 WARN  permission-manager [restartedMain] org.springframework.context.support.AbstractApplicationContext: Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Export identifier [xxx] encountered more than once
+2024-04-06 10:10:28,891 INFO  permission-manager [restartedMain] com.zaxxer.hikari.HikariDataSource: HikariPool-4 - Shutdown initiated...
+2024-04-06 10:10:28,933 INFO  permission-manager [restartedMain] com.zaxxer.hikari.HikariDataSource: HikariPool-4 - Shutdown completed.
+2024-04-06 10:10:28,934 INFO  permission-manager [restartedMain] org.apache.juli.logging.DirectJDKLog: Stopping service [Tomcat]
+2024-04-06 10:10:28,939 INFO  permission-manager [restartedMain] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger: 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-04-06 10:10:28,953 ERROR permission-manager [restartedMain] org.springframework.boot.SpringApplication: Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Export identifier [xxx] encountered more than once
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1773)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1231)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:949)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at ir.mojir.sample_project.SampleProjectApplication.main(SampleProjectApplication.java:13)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Export identifier [xxx] encountered more than once
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1820)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1769)
+	... 21 common frames omitted
+Caused by: org.hibernate.tool.schema.spi.SchemaManagementException: Export identifier [xxx] encountered more than once
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.checkExportIdentifier(AbstractSchemaMigrator.java:500)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:250)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:117)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:286)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:145)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:142)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:315)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:450)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1507)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	... 25 common frames omitted
+2024-04-06 10:11:13,167 INFO  permission-manager [restartedMain] org.springframework.boot.StartupInfoLogger: Starting SampleProjectApplication using Java 17.0.10 with PID 21276 (D:\Programming\spring-boot-crud-source-sample\sample-project\target\classes started by Cyber in D:\Programming\spring-boot-crud-source-sample\sample-project)
+2024-04-06 10:11:13,175 INFO  permission-manager [restartedMain] org.springframework.boot.SpringApplication: No active profile set, falling back to 1 default profile: "default"
+2024-04-06 10:11:13,262 INFO  permission-manager [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-06 10:11:13,270 INFO  permission-manager [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interface.
+2024-04-06 10:11:13,315 INFO  permission-manager [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat initialized with port 8080 (http)
+2024-04-06 10:11:13,315 INFO  permission-manager [restartedMain] org.apache.juli.logging.DirectJDKLog: Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-06 10:11:13,316 INFO  permission-manager [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting service [Tomcat]
+2024-04-06 10:11:13,316 INFO  permission-manager [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-04-06 10:11:13,329 INFO  permission-manager [restartedMain] org.apache.juli.logging.DirectJDKLog: Initializing Spring embedded WebApplicationContext
+2024-04-06 10:11:13,329 INFO  permission-manager [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 146 ms
+2024-04-06 10:11:13,335 INFO  permission-manager [restartedMain] com.zaxxer.hikari.HikariDataSource: HikariPool-5 - Starting...
+2024-04-06 10:11:13,346 INFO  permission-manager [restartedMain] com.zaxxer.hikari.pool.HikariPool: HikariPool-5 - Added connection conn31: url=jdbc:h2:file:./db user=SA
+2024-04-06 10:11:13,346 INFO  permission-manager [restartedMain] com.zaxxer.hikari.HikariDataSource: HikariPool-5 - Start completed.
+2024-04-06 10:11:13,346 INFO  permission-manager [restartedMain] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration: H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./db'
+2024-04-06 10:11:13,360 INFO  permission-manager [restartedMain] org.hibernate.jpa.internal.util.LogHelper: HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-06 10:11:13,362 INFO  permission-manager [restartedMain] org.hibernate.cache.internal.RegionFactoryInitiator: HHH000026: Second-level cache disabled
+2024-04-06 10:11:13,363 INFO  permission-manager [restartedMain] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo: No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-06 10:11:13,381 INFO  permission-manager [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-06 10:11:13,387 INFO  permission-manager [restartedMain] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-06 10:11:13,419 WARN  permission-manager [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-06 10:11:13,458 INFO  permission-manager [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer: LiveReload server is running on port 35729
+2024-04-06 10:11:13,460 INFO  permission-manager [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting ProtocolHandler ["http-nio-8080"]
+2024-04-06 10:11:13,464 INFO  permission-manager [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat started on port 8080 (http) with context path ''
+2024-04-06 10:11:13,466 INFO  permission-manager [restartedMain] org.springframework.boot.StartupInfoLogger: Started SampleProjectApplication in 0.326 seconds (process running for 282.861)
+2024-04-06 10:11:13,466 INFO  permission-manager [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener: Condition evaluation unchanged
+2024-04-06 10:11:18,225 INFO  permission-manager [http-nio-8080-exec-1] org.apache.juli.logging.DirectJDKLog: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-06 10:11:18,225 INFO  permission-manager [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet: Initializing Servlet 'dispatcherServlet'
+2024-04-06 10:11:18,226 INFO  permission-manager [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet: Completed initialization in 0 ms
+2024-04-06 10:11:18,237 INFO  permission-manager [http-nio-8080-exec-1] ir.mojir.sample_project.services.XxxService: A new xxx with id 1 was created successfully.
+2024-04-06 10:11:18,239 ERROR permission-manager [http-nio-8080-exec-1] ir.mojir.sample_project.exception_mappers.DefaultExceptionMapper: A general exception occured in processing request. Trace: 
+org.springframework.web.HttpMediaTypeNotAcceptableException: No acceptable representation
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:322)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.handleReturnValue(RequestResponseBodyMethodProcessor.java:190)
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:78)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:917)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:829)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-04-06 10:11:18,242 WARN  permission-manager [http-nio-8080-exec-1] org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver: Resolved [org.springframework.web.HttpMediaTypeNotAcceptableException: No acceptable representation]
+2024-04-06 10:12:05,137 INFO  permission-manager [http-nio-8080-exec-2] ir.mojir.sample_project.services.XxxService: A new xxx with id 2 was created successfully.
+2024-04-06 10:12:05,138 ERROR permission-manager [http-nio-8080-exec-2] ir.mojir.sample_project.exception_mappers.DefaultExceptionMapper: A general exception occured in processing request. Trace: 
+org.springframework.web.HttpMediaTypeNotAcceptableException: No acceptable representation
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:322)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.handleReturnValue(RequestResponseBodyMethodProcessor.java:190)
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:78)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:917)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:829)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-04-06 10:12:05,139 WARN  permission-manager [http-nio-8080-exec-2] org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver: Resolved [org.springframework.web.HttpMediaTypeNotAcceptableException: No acceptable representation]
+2024-04-06 10:14:21,875 INFO  permission-manager [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener: Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-04-06 10:14:21,878 INFO  permission-manager [Thread-16] org.apache.juli.logging.DirectJDKLog: Stopping ProtocolHandler ["http-nio-8080"]
+2024-04-06 10:14:21,892 INFO  permission-manager [Thread-16] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-06 10:14:21,892 INFO  permission-manager [Thread-16] com.zaxxer.hikari.HikariDataSource: HikariPool-5 - Shutdown initiated...
+2024-04-06 10:14:21,902 INFO  permission-manager [Thread-16] com.zaxxer.hikari.HikariDataSource: HikariPool-5 - Shutdown completed.
+2024-04-06 10:14:21,959 INFO  permission-manager [restartedMain] org.springframework.boot.StartupInfoLogger: Starting SampleProjectApplication using Java 17.0.10 with PID 21276 (D:\Programming\spring-boot-crud-source-sample\sample-project\target\classes started by Cyber in D:\Programming\spring-boot-crud-source-sample\sample-project)
+2024-04-06 10:14:21,959 INFO  permission-manager [restartedMain] org.springframework.boot.SpringApplication: No active profile set, falling back to 1 default profile: "default"
+2024-04-06 10:14:22,027 INFO  permission-manager [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-06 10:14:22,033 INFO  permission-manager [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interface.
+2024-04-06 10:14:22,081 INFO  permission-manager [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat initialized with port 8080 (http)
+2024-04-06 10:14:22,082 INFO  permission-manager [restartedMain] org.apache.juli.logging.DirectJDKLog: Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-06 10:14:22,086 INFO  permission-manager [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting service [Tomcat]
+2024-04-06 10:14:22,087 INFO  permission-manager [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-04-06 10:14:22,102 INFO  permission-manager [restartedMain] org.apache.juli.logging.DirectJDKLog: Initializing Spring embedded WebApplicationContext
+2024-04-06 10:14:22,102 INFO  permission-manager [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 142 ms
+2024-04-06 10:14:22,108 INFO  permission-manager [restartedMain] com.zaxxer.hikari.HikariDataSource: HikariPool-6 - Starting...
+2024-04-06 10:14:22,115 INFO  permission-manager [restartedMain] com.zaxxer.hikari.pool.HikariPool: HikariPool-6 - Added connection conn41: url=jdbc:h2:file:./db user=SA
+2024-04-06 10:14:22,115 INFO  permission-manager [restartedMain] com.zaxxer.hikari.HikariDataSource: HikariPool-6 - Start completed.
+2024-04-06 10:14:22,116 INFO  permission-manager [restartedMain] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration: H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./db'
+2024-04-06 10:14:22,126 INFO  permission-manager [restartedMain] org.hibernate.jpa.internal.util.LogHelper: HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-06 10:14:22,128 INFO  permission-manager [restartedMain] org.hibernate.cache.internal.RegionFactoryInitiator: HHH000026: Second-level cache disabled
+2024-04-06 10:14:22,131 INFO  permission-manager [restartedMain] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo: No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-06 10:14:22,150 INFO  permission-manager [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-06 10:14:22,151 INFO  permission-manager [restartedMain] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-06 10:14:22,181 WARN  permission-manager [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-06 10:14:22,212 INFO  permission-manager [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer: LiveReload server is running on port 35729
+2024-04-06 10:14:22,215 INFO  permission-manager [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting ProtocolHandler ["http-nio-8080"]
+2024-04-06 10:14:22,219 INFO  permission-manager [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat started on port 8080 (http) with context path ''
+2024-04-06 10:14:22,222 INFO  permission-manager [restartedMain] org.springframework.boot.StartupInfoLogger: Started SampleProjectApplication in 0.278 seconds (process running for 471.617)
+2024-04-06 10:14:22,223 INFO  permission-manager [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener: Condition evaluation unchanged
+2024-04-06 10:14:29,717 INFO  permission-manager [http-nio-8080-exec-1] org.apache.juli.logging.DirectJDKLog: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-06 10:14:29,718 INFO  permission-manager [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet: Initializing Servlet 'dispatcherServlet'
+2024-04-06 10:14:29,718 INFO  permission-manager [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet: Completed initialization in 0 ms
+2024-04-06 10:14:29,728 INFO  permission-manager [http-nio-8080-exec-1] ir.mojir.sample_project.services.XxxService: A new xxx with id 52 was created successfully.
+2024-04-06 10:14:44,061 INFO  permission-manager [http-nio-8080-exec-2] ir.mojir.sample_project.services.XxxService: Searching xxx
+2024-04-06 10:14:44,085 ERROR permission-manager [http-nio-8080-exec-2] ir.mojir.sample_project.exception_mappers.DefaultExceptionMapper: A general exception occured in processing request. Trace: 
+org.springframework.http.converter.HttpMessageConversionException: Type definition error: [simple type, class ir.mojir.sample_project.dtos.xxx.XxxSearchResultRow]
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.writeInternal(AbstractJackson2HttpMessageConverter.java:489)
+	at org.springframework.http.converter.AbstractGenericHttpMessageConverter.write(AbstractGenericHttpMessageConverter.java:114)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:297)
+	at org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor.handleReturnValue(HttpEntityMethodProcessor.java:245)
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:78)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:917)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:829)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: No serializer found for class ir.mojir.sample_project.dtos.xxx.XxxSearchResultRow and no properties discovered to create BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS) (through reference chain: java.util.ArrayList[0])
+	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:77)
+	at com.fasterxml.jackson.databind.SerializerProvider.reportBadDefinition(SerializerProvider.java:1308)
+	at com.fasterxml.jackson.databind.DatabindContext.reportBadDefinition(DatabindContext.java:414)
+	at com.fasterxml.jackson.databind.ser.impl.UnknownSerializer.failForEmpty(UnknownSerializer.java:53)
+	at com.fasterxml.jackson.databind.ser.impl.UnknownSerializer.serialize(UnknownSerializer.java:30)
+	at com.fasterxml.jackson.databind.ser.std.CollectionSerializer.serializeContents(CollectionSerializer.java:145)
+	at com.fasterxml.jackson.databind.ser.std.CollectionSerializer.serialize(CollectionSerializer.java:107)
+	at com.fasterxml.jackson.databind.ser.std.CollectionSerializer.serialize(CollectionSerializer.java:25)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:479)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:399)
+	at com.fasterxml.jackson.databind.ObjectWriter$Prefetch.serialize(ObjectWriter.java:1568)
+	at com.fasterxml.jackson.databind.ObjectWriter.writeValue(ObjectWriter.java:1061)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.writeInternal(AbstractJackson2HttpMessageConverter.java:483)
+	... 48 common frames omitted
+2024-04-06 10:14:44,090 WARN  permission-manager [http-nio-8080-exec-2] org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver: Resolved [org.springframework.http.converter.HttpMessageConversionException: Type definition error: [simple type, class ir.mojir.sample_project.dtos.xxx.XxxSearchResultRow]]
+2024-04-06 10:15:24,591 INFO  permission-manager [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener: Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-04-06 10:15:24,597 INFO  permission-manager [Thread-23] org.apache.juli.logging.DirectJDKLog: Stopping ProtocolHandler ["http-nio-8080"]
+2024-04-06 10:15:24,609 INFO  permission-manager [Thread-23] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-06 10:15:24,610 INFO  permission-manager [Thread-23] com.zaxxer.hikari.HikariDataSource: HikariPool-6 - Shutdown initiated...
+2024-04-06 10:15:24,664 INFO  permission-manager [Thread-23] com.zaxxer.hikari.HikariDataSource: HikariPool-6 - Shutdown completed.
+2024-04-06 10:15:24,726 INFO  permission-manager [restartedMain] org.springframework.boot.StartupInfoLogger: Starting SampleProjectApplication using Java 17.0.10 with PID 21276 (D:\Programming\spring-boot-crud-source-sample\sample-project\target\classes started by Cyber in D:\Programming\spring-boot-crud-source-sample\sample-project)
+2024-04-06 10:15:24,726 INFO  permission-manager [restartedMain] org.springframework.boot.SpringApplication: No active profile set, falling back to 1 default profile: "default"
+2024-04-06 10:15:24,794 INFO  permission-manager [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-06 10:15:24,803 INFO  permission-manager [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interface.
+2024-04-06 10:15:24,848 INFO  permission-manager [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat initialized with port 8080 (http)
+2024-04-06 10:15:24,848 INFO  permission-manager [restartedMain] org.apache.juli.logging.DirectJDKLog: Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-06 10:15:24,849 INFO  permission-manager [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting service [Tomcat]
+2024-04-06 10:15:24,849 INFO  permission-manager [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-04-06 10:15:24,862 INFO  permission-manager [restartedMain] org.apache.juli.logging.DirectJDKLog: Initializing Spring embedded WebApplicationContext
+2024-04-06 10:15:24,862 INFO  permission-manager [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 135 ms
+2024-04-06 10:15:24,867 INFO  permission-manager [restartedMain] com.zaxxer.hikari.HikariDataSource: HikariPool-7 - Starting...
+2024-04-06 10:15:24,874 INFO  permission-manager [restartedMain] com.zaxxer.hikari.pool.HikariPool: HikariPool-7 - Added connection conn51: url=jdbc:h2:file:./db user=SA
+2024-04-06 10:15:24,874 INFO  permission-manager [restartedMain] com.zaxxer.hikari.HikariDataSource: HikariPool-7 - Start completed.
+2024-04-06 10:15:24,875 INFO  permission-manager [restartedMain] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration: H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./db'
+2024-04-06 10:15:24,887 INFO  permission-manager [restartedMain] org.hibernate.jpa.internal.util.LogHelper: HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-06 10:15:24,889 INFO  permission-manager [restartedMain] org.hibernate.cache.internal.RegionFactoryInitiator: HHH000026: Second-level cache disabled
+2024-04-06 10:15:24,890 INFO  permission-manager [restartedMain] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo: No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-06 10:15:24,909 INFO  permission-manager [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-06 10:15:24,910 INFO  permission-manager [restartedMain] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-06 10:15:24,943 WARN  permission-manager [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-06 10:15:24,979 INFO  permission-manager [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer: LiveReload server is running on port 35729
+2024-04-06 10:15:24,983 INFO  permission-manager [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting ProtocolHandler ["http-nio-8080"]
+2024-04-06 10:15:24,986 INFO  permission-manager [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat started on port 8080 (http) with context path ''
+2024-04-06 10:15:24,988 INFO  permission-manager [restartedMain] org.springframework.boot.StartupInfoLogger: Started SampleProjectApplication in 0.275 seconds (process running for 534.383)
+2024-04-06 10:15:24,989 INFO  permission-manager [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener: Condition evaluation unchanged
+2024-04-06 10:15:29,439 INFO  permission-manager [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener: Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-04-06 10:15:29,441 INFO  permission-manager [Thread-27] org.apache.juli.logging.DirectJDKLog: Stopping ProtocolHandler ["http-nio-8080"]
+2024-04-06 10:15:29,457 INFO  permission-manager [Thread-27] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-06 10:15:29,457 INFO  permission-manager [Thread-27] com.zaxxer.hikari.HikariDataSource: HikariPool-7 - Shutdown initiated...
+2024-04-06 10:15:29,513 INFO  permission-manager [Thread-27] com.zaxxer.hikari.HikariDataSource: HikariPool-7 - Shutdown completed.
+2024-04-06 10:15:29,585 INFO  permission-manager [restartedMain] org.springframework.boot.StartupInfoLogger: Starting SampleProjectApplication using Java 17.0.10 with PID 21276 (D:\Programming\spring-boot-crud-source-sample\sample-project\target\classes started by Cyber in D:\Programming\spring-boot-crud-source-sample\sample-project)
+2024-04-06 10:15:29,585 INFO  permission-manager [restartedMain] org.springframework.boot.SpringApplication: No active profile set, falling back to 1 default profile: "default"
+2024-04-06 10:15:29,648 INFO  permission-manager [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-06 10:15:29,653 INFO  permission-manager [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface.
+2024-04-06 10:15:29,698 INFO  permission-manager [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat initialized with port 8080 (http)
+2024-04-06 10:15:29,698 INFO  permission-manager [restartedMain] org.apache.juli.logging.DirectJDKLog: Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-06 10:15:29,699 INFO  permission-manager [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting service [Tomcat]
+2024-04-06 10:15:29,701 INFO  permission-manager [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-04-06 10:15:29,717 INFO  permission-manager [restartedMain] org.apache.juli.logging.DirectJDKLog: Initializing Spring embedded WebApplicationContext
+2024-04-06 10:15:29,717 INFO  permission-manager [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 131 ms
+2024-04-06 10:15:29,725 INFO  permission-manager [restartedMain] com.zaxxer.hikari.HikariDataSource: HikariPool-8 - Starting...
+2024-04-06 10:15:29,731 INFO  permission-manager [restartedMain] com.zaxxer.hikari.pool.HikariPool: HikariPool-8 - Added connection conn61: url=jdbc:h2:file:./db user=SA
+2024-04-06 10:15:29,731 INFO  permission-manager [restartedMain] com.zaxxer.hikari.HikariDataSource: HikariPool-8 - Start completed.
+2024-04-06 10:15:29,732 INFO  permission-manager [restartedMain] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration: H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./db'
+2024-04-06 10:15:29,744 INFO  permission-manager [restartedMain] org.hibernate.jpa.internal.util.LogHelper: HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-06 10:15:29,745 INFO  permission-manager [restartedMain] org.hibernate.cache.internal.RegionFactoryInitiator: HHH000026: Second-level cache disabled
+2024-04-06 10:15:29,747 INFO  permission-manager [restartedMain] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo: No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-06 10:15:29,767 INFO  permission-manager [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-06 10:15:29,768 INFO  permission-manager [restartedMain] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-06 10:15:29,803 WARN  permission-manager [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-06 10:15:29,833 INFO  permission-manager [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer: LiveReload server is running on port 35729
+2024-04-06 10:15:29,834 INFO  permission-manager [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting ProtocolHandler ["http-nio-8080"]
+2024-04-06 10:15:29,837 INFO  permission-manager [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat started on port 8080 (http) with context path ''
+2024-04-06 10:15:29,838 INFO  permission-manager [restartedMain] org.springframework.boot.StartupInfoLogger: Started SampleProjectApplication in 0.279 seconds (process running for 539.233)
+2024-04-06 10:15:29,839 INFO  permission-manager [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener: Condition evaluation unchanged
+2024-04-06 10:15:34,316 INFO  permission-manager [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener: Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-04-06 10:15:34,319 INFO  permission-manager [Thread-31] org.apache.juli.logging.DirectJDKLog: Stopping ProtocolHandler ["http-nio-8080"]
+2024-04-06 10:15:34,332 INFO  permission-manager [Thread-31] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-06 10:15:34,333 INFO  permission-manager [Thread-31] com.zaxxer.hikari.HikariDataSource: HikariPool-8 - Shutdown initiated...
+2024-04-06 10:15:34,380 INFO  permission-manager [Thread-31] com.zaxxer.hikari.HikariDataSource: HikariPool-8 - Shutdown completed.
+2024-04-06 10:15:34,441 INFO  permission-manager [restartedMain] org.springframework.boot.StartupInfoLogger: Starting SampleProjectApplication using Java 17.0.10 with PID 21276 (D:\Programming\spring-boot-crud-source-sample\sample-project\target\classes started by Cyber in D:\Programming\spring-boot-crud-source-sample\sample-project)
+2024-04-06 10:15:34,441 INFO  permission-manager [restartedMain] org.springframework.boot.SpringApplication: No active profile set, falling back to 1 default profile: "default"
+2024-04-06 10:15:34,505 INFO  permission-manager [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-06 10:15:34,512 INFO  permission-manager [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interface.
+2024-04-06 10:15:34,558 INFO  permission-manager [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat initialized with port 8080 (http)
+2024-04-06 10:15:34,559 INFO  permission-manager [restartedMain] org.apache.juli.logging.DirectJDKLog: Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-06 10:15:34,559 INFO  permission-manager [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting service [Tomcat]
+2024-04-06 10:15:34,559 INFO  permission-manager [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-04-06 10:15:34,570 INFO  permission-manager [restartedMain] org.apache.juli.logging.DirectJDKLog: Initializing Spring embedded WebApplicationContext
+2024-04-06 10:15:34,571 INFO  permission-manager [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 129 ms
+2024-04-06 10:15:34,575 INFO  permission-manager [restartedMain] com.zaxxer.hikari.HikariDataSource: HikariPool-9 - Starting...
+2024-04-06 10:15:34,583 INFO  permission-manager [restartedMain] com.zaxxer.hikari.pool.HikariPool: HikariPool-9 - Added connection conn71: url=jdbc:h2:file:./db user=SA
+2024-04-06 10:15:34,583 INFO  permission-manager [restartedMain] com.zaxxer.hikari.HikariDataSource: HikariPool-9 - Start completed.
+2024-04-06 10:15:34,584 INFO  permission-manager [restartedMain] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration: H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./db'
+2024-04-06 10:15:34,595 INFO  permission-manager [restartedMain] org.hibernate.jpa.internal.util.LogHelper: HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-06 10:15:34,598 INFO  permission-manager [restartedMain] org.hibernate.cache.internal.RegionFactoryInitiator: HHH000026: Second-level cache disabled
+2024-04-06 10:15:34,600 INFO  permission-manager [restartedMain] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo: No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-06 10:15:34,619 INFO  permission-manager [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-06 10:15:34,620 INFO  permission-manager [restartedMain] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-06 10:15:34,650 WARN  permission-manager [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-06 10:15:34,681 INFO  permission-manager [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer: LiveReload server is running on port 35729
+2024-04-06 10:15:34,682 INFO  permission-manager [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting ProtocolHandler ["http-nio-8080"]
+2024-04-06 10:15:34,692 INFO  permission-manager [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat started on port 8080 (http) with context path ''
+2024-04-06 10:15:34,694 INFO  permission-manager [restartedMain] org.springframework.boot.StartupInfoLogger: Started SampleProjectApplication in 0.267 seconds (process running for 544.089)
+2024-04-06 10:15:34,695 INFO  permission-manager [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener: Condition evaluation unchanged
+2024-04-06 10:15:38,080 INFO  permission-manager [http-nio-8080-exec-1] org.apache.juli.logging.DirectJDKLog: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-06 10:15:38,080 INFO  permission-manager [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet: Initializing Servlet 'dispatcherServlet'
+2024-04-06 10:15:38,081 INFO  permission-manager [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet: Completed initialization in 1 ms
+2024-04-06 10:15:38,088 INFO  permission-manager [http-nio-8080-exec-1] ir.mojir.sample_project.services.XxxService: Searching xxx
+2024-04-06 10:16:20,689 INFO  permission-manager [http-nio-8080-exec-2] ir.mojir.sample_project.services.XxxService: Searching xxx
+2024-04-06 10:16:23,395 INFO  permission-manager [http-nio-8080-exec-3] ir.mojir.sample_project.services.XxxService: Searching xxx
+2024-04-06 10:16:30,953 INFO  permission-manager [http-nio-8080-exec-5] ir.mojir.sample_project.services.XxxService: Searching xxx
+2024-04-06 10:16:41,573 INFO  permission-manager [http-nio-8080-exec-4] ir.mojir.sample_project.services.XxxService: Searching xxx
+2024-04-06 10:16:44,517 INFO  permission-manager [http-nio-8080-exec-6] ir.mojir.sample_project.services.XxxService: Searching xxx
+2024-04-06 10:17:27,106 INFO  permission-manager [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener: Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-04-06 10:17:27,110 INFO  permission-manager [Thread-35] org.apache.juli.logging.DirectJDKLog: Stopping ProtocolHandler ["http-nio-8080"]
+2024-04-06 10:17:27,125 INFO  permission-manager [Thread-35] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-06 10:17:27,127 INFO  permission-manager [Thread-35] com.zaxxer.hikari.HikariDataSource: HikariPool-9 - Shutdown initiated...
+2024-04-06 10:17:27,181 INFO  permission-manager [Thread-35] com.zaxxer.hikari.HikariDataSource: HikariPool-9 - Shutdown completed.
+2024-04-06 10:17:27,239 INFO  permission-manager [restartedMain] org.springframework.boot.StartupInfoLogger: Starting SampleProjectApplication using Java 17.0.10 with PID 21276 (D:\Programming\spring-boot-crud-source-sample\sample-project\target\classes started by Cyber in D:\Programming\spring-boot-crud-source-sample\sample-project)
+2024-04-06 10:17:27,239 INFO  permission-manager [restartedMain] org.springframework.boot.SpringApplication: No active profile set, falling back to 1 default profile: "default"
+2024-04-06 10:17:27,302 INFO  permission-manager [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-06 10:17:27,306 INFO  permission-manager [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interface.
+2024-04-06 10:17:27,353 INFO  permission-manager [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat initialized with port 8080 (http)
+2024-04-06 10:17:27,354 INFO  permission-manager [restartedMain] org.apache.juli.logging.DirectJDKLog: Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-06 10:17:27,354 INFO  permission-manager [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting service [Tomcat]
+2024-04-06 10:17:27,355 INFO  permission-manager [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-04-06 10:17:27,366 INFO  permission-manager [restartedMain] org.apache.juli.logging.DirectJDKLog: Initializing Spring embedded WebApplicationContext
+2024-04-06 10:17:27,366 INFO  permission-manager [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 126 ms
+2024-04-06 10:17:27,371 INFO  permission-manager [restartedMain] com.zaxxer.hikari.HikariDataSource: HikariPool-10 - Starting...
+2024-04-06 10:17:27,376 INFO  permission-manager [restartedMain] com.zaxxer.hikari.pool.HikariPool: HikariPool-10 - Added connection conn81: url=jdbc:h2:file:./db user=SA
+2024-04-06 10:17:27,377 INFO  permission-manager [restartedMain] com.zaxxer.hikari.HikariDataSource: HikariPool-10 - Start completed.
+2024-04-06 10:17:27,377 INFO  permission-manager [restartedMain] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration: H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./db'
+2024-04-06 10:17:27,388 INFO  permission-manager [restartedMain] org.hibernate.jpa.internal.util.LogHelper: HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-06 10:17:27,390 INFO  permission-manager [restartedMain] org.hibernate.cache.internal.RegionFactoryInitiator: HHH000026: Second-level cache disabled
+2024-04-06 10:17:27,392 INFO  permission-manager [restartedMain] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo: No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-06 10:17:27,414 INFO  permission-manager [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-06 10:17:27,415 INFO  permission-manager [restartedMain] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-06 10:17:27,444 WARN  permission-manager [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-06 10:17:27,472 INFO  permission-manager [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer: LiveReload server is running on port 35729
+2024-04-06 10:17:27,474 INFO  permission-manager [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting ProtocolHandler ["http-nio-8080"]
+2024-04-06 10:17:27,477 INFO  permission-manager [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat started on port 8080 (http) with context path ''
+2024-04-06 10:17:27,479 INFO  permission-manager [restartedMain] org.springframework.boot.StartupInfoLogger: Started SampleProjectApplication in 0.254 seconds (process running for 656.875)
+2024-04-06 10:17:27,480 INFO  permission-manager [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener: Condition evaluation unchanged
+2024-04-06 10:17:30,428 INFO  permission-manager [http-nio-8080-exec-1] org.apache.juli.logging.DirectJDKLog: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-06 10:17:30,428 INFO  permission-manager [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet: Initializing Servlet 'dispatcherServlet'
+2024-04-06 10:17:30,429 INFO  permission-manager [http-nio-8080-exec-1] org.springframework.web.servlet.FrameworkServlet: Completed initialization in 0 ms
+2024-04-06 10:17:30,434 INFO  permission-manager [http-nio-8080-exec-1] ir.mojir.sample_project.services.XxxService: Searching xxx
+2024-04-06 10:17:40,291 INFO  permission-manager [http-nio-8080-exec-2] ir.mojir.sample_project.services.XxxService: Searching xxx
+2024-04-06 10:19:25,939 INFO  permission-manager [File Watcher] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener: Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-04-06 10:19:25,941 INFO  permission-manager [Thread-39] org.apache.juli.logging.DirectJDKLog: Stopping ProtocolHandler ["http-nio-8080"]
+2024-04-06 10:19:25,959 INFO  permission-manager [Thread-39] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-06 10:19:25,959 INFO  permission-manager [Thread-39] com.zaxxer.hikari.HikariDataSource: HikariPool-10 - Shutdown initiated...
+2024-04-06 10:19:26,015 INFO  permission-manager [Thread-39] com.zaxxer.hikari.HikariDataSource: HikariPool-10 - Shutdown completed.
+2024-04-06 10:19:26,073 INFO  permission-manager [restartedMain] org.springframework.boot.StartupInfoLogger: Starting SampleProjectApplication using Java 17.0.10 with PID 21276 (D:\Programming\spring-boot-crud-source-sample\sample-project\target\classes started by Cyber in D:\Programming\spring-boot-crud-source-sample\sample-project)
+2024-04-06 10:19:26,073 INFO  permission-manager [restartedMain] org.springframework.boot.SpringApplication: No active profile set, falling back to 1 default profile: "default"
+2024-04-06 10:19:26,122 INFO  permission-manager [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-06 10:19:26,125 INFO  permission-manager [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interface.
+2024-04-06 10:19:26,156 INFO  permission-manager [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat initialized with port 8080 (http)
+2024-04-06 10:19:26,157 INFO  permission-manager [restartedMain] org.apache.juli.logging.DirectJDKLog: Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-06 10:19:26,157 INFO  permission-manager [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting service [Tomcat]
+2024-04-06 10:19:26,157 INFO  permission-manager [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-04-06 10:19:26,166 INFO  permission-manager [restartedMain] org.apache.juli.logging.DirectJDKLog: Initializing Spring embedded WebApplicationContext
+2024-04-06 10:19:26,166 INFO  permission-manager [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 92 ms
+2024-04-06 10:19:26,170 INFO  permission-manager [restartedMain] com.zaxxer.hikari.HikariDataSource: HikariPool-11 - Starting...
+2024-04-06 10:19:26,176 INFO  permission-manager [restartedMain] com.zaxxer.hikari.pool.HikariPool: HikariPool-11 - Added connection conn91: url=jdbc:h2:file:./db user=SA
+2024-04-06 10:19:26,177 INFO  permission-manager [restartedMain] com.zaxxer.hikari.HikariDataSource: HikariPool-11 - Start completed.
+2024-04-06 10:19:26,177 INFO  permission-manager [restartedMain] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration: H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./db'
+2024-04-06 10:19:26,189 INFO  permission-manager [restartedMain] org.hibernate.jpa.internal.util.LogHelper: HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-06 10:19:26,190 INFO  permission-manager [restartedMain] org.hibernate.cache.internal.RegionFactoryInitiator: HHH000026: Second-level cache disabled
+2024-04-06 10:19:26,192 INFO  permission-manager [restartedMain] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo: No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-06 10:19:26,206 INFO  permission-manager [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-06 10:19:26,207 INFO  permission-manager [restartedMain] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-06 10:19:26,232 WARN  permission-manager [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-06 10:19:26,257 INFO  permission-manager [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer: LiveReload server is running on port 35729
+2024-04-06 10:19:26,259 INFO  permission-manager [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting ProtocolHandler ["http-nio-8080"]
+2024-04-06 10:19:26,262 INFO  permission-manager [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat started on port 8080 (http) with context path ''
+2024-04-06 10:19:26,264 INFO  permission-manager [restartedMain] org.springframework.boot.StartupInfoLogger: Started SampleProjectApplication in 0.204 seconds (process running for 775.659)
+2024-04-06 10:19:26,264 INFO  permission-manager [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener: Condition evaluation unchanged
+2024-04-06 10:19:29,185 INFO  permission-manager [http-nio-8080-exec-2] org.apache.juli.logging.DirectJDKLog: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-06 10:19:29,185 INFO  permission-manager [http-nio-8080-exec-2] org.springframework.web.servlet.FrameworkServlet: Initializing Servlet 'dispatcherServlet'
+2024-04-06 10:19:29,185 INFO  permission-manager [http-nio-8080-exec-2] org.springframework.web.servlet.FrameworkServlet: Completed initialization in 0 ms
+2024-04-06 10:19:29,185 INFO  permission-manager [http-nio-8080-exec-2] ir.mojir.sample_project.services.XxxService: Searching xxx
+2024-04-06 10:20:32,687 INFO  permission-manager [http-nio-8080-exec-5] ir.mojir.sample_project.services.XxxService: Searching xxx
+2024-04-06 10:21:43,637 INFO  permission-manager [http-nio-8080-exec-1] ir.mojir.sample_project.services.XxxService: Searching xxx
+2024-04-06 10:22:01,402 INFO  permission-manager [http-nio-8080-exec-8] ir.mojir.sample_project.services.XxxService: Searching xxx
+2024-04-06 10:22:33,106 ERROR permission-manager [http-nio-8080-exec-4] ir.mojir.sample_project.exception_mappers.DefaultExceptionMapper: A general exception occured in processing request. Trace: 
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:265)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:441)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:382)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:126)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:68)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:507)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1283)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1065)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-04-06 10:22:33,109 WARN  permission-manager [http-nio-8080-exec-4] org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver: Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2024-04-06 10:22:36,890 INFO  permission-manager [http-nio-8080-exec-10] ir.mojir.sample_project.services.XxxService: Xxx with id 1 was retrieved successfully.
+2024-04-06 10:22:43,425 INFO  permission-manager [http-nio-8080-exec-7] ir.mojir.sample_project.services.XxxService: Xxx with id 1 was updated successfully.
+2024-04-06 10:22:51,761 INFO  permission-manager [http-nio-8080-exec-9] ir.mojir.sample_project.services.XxxService: Xxx with id 0 was deleted successfully.
+2024-04-06 10:22:55,524 INFO  permission-manager [http-nio-8080-exec-2] ir.mojir.sample_project.services.XxxService: Searching xxx
+2024-04-06 10:22:57,620 INFO  permission-manager [http-nio-8080-exec-3] ir.mojir.sample_project.services.XxxService: Searching xxx
+2024-04-06 10:24:05,324 INFO  permission-manager [http-nio-8080-exec-6] ir.mojir.sample_project.services.XxxService: Searching xxx
+2024-04-06 10:24:15,426 INFO  permission-manager [http-nio-8080-exec-1] ir.mojir.sample_project.services.XxxService: Searching xxx
